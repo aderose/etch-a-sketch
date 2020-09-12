@@ -29,20 +29,6 @@ h1 {
   border: 2px solid rgba(0, 0, 0, 0.1);
 }
 
-@media (min-width: 425px) {
-  .container {
-    width: 400px;
-    height: 400px;
-  }
-}
-
-@media (min-width: 768px) {
-  .container {
-    width: 700px;
-    height: 700px;
-  }
-}
-
 .cell {
   border: 1px dashed rgba(0, 0, 0, 0.1);
 }
@@ -52,7 +38,7 @@ h1 {
 .btn {
   font-family: inherit;
   color: inherit;
-  width: 120px;
+  width: 60px;
   height: 30px;
   font-size: 14px;
   line-height: 20px;
@@ -71,4 +57,23 @@ h1 {
 
 .btn:focus {
   outline: none;
+}
+
+@media (min-width: 425px) {
+
+  .btn {
+    width: 120px;
+  }
+
+  .container {
+    width: 400px;
+    height: 400px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 700px;
+    height: 700px;
+  }
 }

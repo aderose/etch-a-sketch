@@ -13,7 +13,7 @@ btn.addEventListener('click', () => {
 
 rnd.addEventListener('click', () => {
   properties['isRandom'] = !properties['isRandom'];
-  rnd.textContent = properties['isRandom'] ? "Black" : "Multicoloured";
+  rnd.textContent = properties['isRandom'] ? "Black" : "Colour";
 });
 
 shade.addEventListener('click', () => {

@@ -35,7 +35,7 @@ function populateGrid(n) {
 
 function hoverFunction() {
   this.style.backgroundColor = properties['isRandom'] ? getRandomColour() : "black";
-  this.style.opacity = properties['isShaded'] ? Math.min(Number(this.style.opacity) + 0.1, 1) : 1;
+  this.style.opacity = properties['isShaded'] ? Math.min(+this.style.opacity + 0.1, 1) : 1;
 }
 
 function getRandomColour() {

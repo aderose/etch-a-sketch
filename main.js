@@ -12,13 +12,13 @@ btn.addEventListener('click', () => {
 });
 
 rnd.addEventListener('click', () => {
-  properties['isRandom'] = !properties['isRandom'];
-  rnd.textContent = properties['isRandom'] ? "Black" : "Colour";
+  properties.isRandom = !properties.isRandom;
+  rnd.textContent = properties.isRandom ? "Black" : "Colour";
 });
 
 shade.addEventListener('click', () => {
-  properties['isShaded'] = !properties['isShaded'];
-  shade.textContent = properties['isShaded'] ? "No Shade" : "Shade";
+  properties.isShaded = !properties.isShaded;
+  shade.textContent = properties.isShaded ? "No Shade" : "Shade";
 });
 
 function populateGrid(n) {
@@ -34,8 +34,8 @@ function populateGrid(n) {
 }
 
 function hoverFunction() {
-  this.style.backgroundColor = properties['isRandom'] ? getRandomColour() : "black";
-  this.style.opacity = properties['isShaded'] ? Math.min(+this.style.opacity + 0.1, 1) : 1;
+  this.style.backgroundColor = properties.isRandom ? getRandomColour() : "black";
+  this.style.opacity = properties.isShaded ? Math.min(+this.style.opacity + 0.1, 1) : 1;
 }
 
 function getRandomColour() {
